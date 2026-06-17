@@ -1,42 +1,27 @@
 'use client'
 import React from 'react';
 
-// Content strictly matching the provided image
+// Updated services based on new verticals
 const servicesData = [
   {
-    title: "Audit and Assurance",
-    desc: "The firm endeavours to understand the client and its business needs before chalking out an audit programme.",
-    img: "/services/audit.png" // Replace with actual image paths
-  },
-  {
-    title: "Management Services",
-    desc: "With the management concentrating on their core competencies, the concept of outsourcing a company's accounts, finance, taxation..",
-    img: "/services/management.png"
-  },
-  {
-    title: "Legal and Secretarial Services",
-    desc: "We deliver complete menu of legal and secretarial services for businesses.",
-    img: "/services/legal.png"
-  },
-  {
-    title: "Taxation",
-    desc: "New legislation is regularly added to an already formidable body of law, so merely keeping abreast of the changes is a considerable challenge.",
+    title: "Taxation & Indirect Tax Litigation",
+    desc: "End-to-end GST management, complex litigation representation, cross-border direct tax planning, UAE VAT compliance, and structured GST refund recovery to free up blocked working capital.",
     img: "/services/taxation.png"
   },
   {
-    title: "BPO Activities",
-    desc: "The barriers to entry in the financial BPO services business are not very high, particularly for lower value services such as accounting transcription.",
-    img: "/services/bpo.png"
+    title: "Credit Risk & Financial Appraisals",
+    desc: "Advanced financial modeling, ratio evaluation, deep-dive due diligence, cash flow mapping, and institutional credit underwriting.",
+    img: "/services/management.png"
   },
   {
-    title: "International Business Services",
-    desc: "Today India is looked at as an investment destination by many international organizations.",
-    img: "/services/international.png"
+    title: "Audit, Assurance & Process Design",
+    desc: "Statutory and tax audits tailored to boost stakeholder trust, paired with internal financial control evaluations (ICFR) and robust Standard Operating Procedure (SOP) design.",
+    img: "/services/audit.png"
   },
   {
-    title: "IFRS",
-    desc: "The implementation of IFRS, a principle-based set of standards, is not just about changing accounting policies.",
-    img: "/services/ifrs.png"
+    title: "Corporate Secretarial & Trade Frameworks",
+    desc: "Hassle-free company formations in India and Dubai, foreign trade incentives (DGFT, EPCG, Advance Authorization), RBI/FEMA regulatory filings, and dedicated Investor Education and Protection Fund (IEPF) asset recoveries.",
+    img: "/services/legal.png"
   }
 ];
 
@@ -46,25 +31,24 @@ export default function ServicesSection(): React.JSX.Element {
       <div className="max-w-[1400px] mx-auto">
         
         {/* Header Section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-20 max-w-3xl mx-auto">
           <span className="text-[#f1a458] text-xs font-bold tracking-widest uppercase block mb-3">
             JAIN PIYUSH & CO.
           </span>
           <h2 className="text-[#0f1b29] text-4xl md:text-[2.5rem] font-bold mb-4 tracking-tight">
-            Welcome to Jain Piyush & Co.
+            Our Multi-Dimensional Services
           </h2>
           <p className="text-gray-500 text-lg">
-            Simplifying bookkeeping, accounting, taxes, compliance and payroll management.
+            We act as a single-window advisory ecosystem for modern enterprises, focusing on four high-impact verticals:
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-6xl mx-auto">
           {servicesData.map((service, index) => (
             <div 
               key={index} 
-              // Center the 7th item in the bottom row on large screens
-              className={`flex ${index === 6 ? 'lg:col-start-2' : ''}`}
+              className="flex"
             >
               {/* Card Container: 
                 Margin-left accommodates the overlapping image. 
