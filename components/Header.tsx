@@ -45,7 +45,6 @@ export default function Header(): React.JSX.Element {
         {/* Desktop Navigation Links */}
         <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm font-semibold text-[#0f1b29]">
           <a href="/about" className="hover:text-orange-500 transition-colors">About Us</a>
-          <a href="/leaders" className="hover:text-orange-500 transition-colors">Leaders</a>
           <a href="/#services" className="hover:text-orange-500 transition-colors">Services</a>
           <a href="/careers" className="hover:text-orange-500 transition-colors">Careers</a>
           <a href="/updates" className="hover:text-orange-500 transition-colors">Stay Updated</a>
