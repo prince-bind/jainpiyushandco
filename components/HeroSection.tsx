@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect, useRef } from 'react';
-import { Building2, Briefcase, Globe, MessageCircle } from 'lucide-react';
+import { FaBuilding, FaBriefcase, FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 
 // --- Custom Animated Counter Component ---
 interface CounterProps {
@@ -85,39 +86,25 @@ export default function HeroSection(): React.JSX.Element {
 
         {/* Left Column - Content */}
         <div className="w-full lg:w-[55%] p-8 lg:p-16 xl:p-24 flex flex-col justify-center z-10">
-          <h1 className="text-5xl md:text-[3.5rem] lg:text-[4.2rem] font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white via-orange-50 to-[#d8a379] mb-6 leading-[1.1] tracking-tight">
-            Jain Piyush &<br /> Company
+          <h1 className="text-5xl md:text-[3.5rem] lg:text-[4.5rem] font-extrabold text-[#d8a379] mb-8 leading-[1.1] tracking-tight">
+            Jain Piyush & Co.
           </h1>
-          <p className="text-[#94a3b8] text-lg md:text-xl mb-12 max-w-lg leading-relaxed font-light">
-            Simplifying bookkeeping, accounting, taxes, compliance and payroll management for modern businesses.
+          
+          <div className="border-l-[3px] border-[#d8a379] pl-6 mb-8 py-2">
+            <p className="text-white/90 text-xl md:text-2xl italic font-light leading-relaxed">
+              "Where there's a way, we'll show it.
+              <br className="hidden md:block" />
+              Where there isn't, we'll help create one."
+            </p>
+          </div>
+
+          <p className="text-[#94a3b8] text-lg leading-relaxed max-w-xl mb-12">
+            Bridging the gap between complex legal frameworks and practical corporate strategy. We turn regulatory obligations into drivers of sustainable corporate growth.
           </p>
 
-          {/* Action Cards */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
-            <button className="flex-1 max-w-sm flex items-center justify-center gap-3 bg-gradient-to-r from-[#d8a379] to-orange-400 hover:from-orange-400 hover:to-orange-500 rounded-xl p-4 md:py-4 md:px-6 text-[#0b131e] font-bold transition-all shadow-[0_0_20px_rgba(216,163,121,0.3)] hover:shadow-[0_0_30px_rgba(216,163,121,0.5)] hover:-translate-y-1">
-              <Building2 size={22} strokeWidth={2.5} />
-              <span className="text-lg">Company Formation</span>
-            </button>
-
-            <button className="flex-1 max-w-sm flex items-center justify-center gap-3 bg-[#142130] border border-[#233547] hover:bg-[#1a2b3c] hover:border-gray-500 rounded-xl p-4 md:py-4 md:px-6 text-white font-bold transition-all shadow-lg hover:-translate-y-1">
-              <Briefcase size={22} strokeWidth={2} className="text-[#d8a379]" />
-              <span className="text-lg">Compliances</span>
-            </button>
-          </div>
-
-          {/* Bottom Trust Indicators */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mt-auto border-t border-white/5 pt-6">
-            <div className="flex items-center gap-4 text-sm text-[#94a3b8] max-w-md">
-              <div className="flex -space-x-3 shrink-0">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 border-2 border-[#0b131e] z-30 flex items-center justify-center text-white text-xs font-bold">UK</div>
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-red-500 border-2 border-[#0b131e] z-20 flex items-center justify-center text-white text-xs font-bold">US</div>
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-2 border-[#0b131e] z-10 flex items-center justify-center text-white text-xs font-bold">AE</div>
-              </div>
-              <p className="leading-snug">
-                Join <span className="font-bold text-white">300+ global entrepreneurs</span> and NRIs who trust us to manage their businesses.
-              </p>
-            </div>
-          </div>
+          <p className="text-white/90 text-base md:text-lg mb-8">
+            Trusted by <span className="text-[#d8a379] font-bold">500+ enterprises</span> locally and globally.
+          </p>
         </div>
 
         {/* Right Column - Image with Static Offset Boundary */}
@@ -173,9 +160,9 @@ export default function HeroSection(): React.JSX.Element {
       </div>
 
       {/* Floating WhatsApp Button */}
-      <div className="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-[#128C7E] hover:-translate-y-1 transition-all z-50 flex items-center justify-center">
-        <MessageCircle size={28} />
-      </div>
+      <Link href={"https://wa.me/919999972659"} className="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-[#128C7E] hover:-translate-y-1 transition-all z-50 flex items-center justify-center">
+        <FaWhatsapp size={28} />
+      </Link>
     </div>
   );
 }

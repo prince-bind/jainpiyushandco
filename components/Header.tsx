@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react';
-import { Mail, Phone, MessageCircle, Menu, X } from 'lucide-react';
+import { FaEnvelope, FaPhoneAlt, FaWhatsapp, FaBars, FaTimes, FaLinkedin } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Header(): React.JSX.Element {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -8,19 +9,21 @@ export default function Header(): React.JSX.Element {
   return (
     <header className="w-full flex flex-col z-50 relative">
       {/* Top Contact Bar */}
-      <div className="hidden md:flex bg-[#151f2b] text-[#cbd5e1] text-xs py-2 px-4 flex-row justify-center gap-12 items-center tracking-wide border-b border-gray-800">
-        <div className="flex items-center gap-2">
-          <Mail size={14} /> jainpiyushandco@gmail.com
+      <div className="hidden md:flex bg-[#151f2b] text-[#cbd5e1] text-xs py-2 px-4 flex-row justify-center gap-8 items-center tracking-wide border-b border-gray-800">
+        <Link href="mailto:jainpiyushandco@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer">
+          <FaEnvelope size={14} /> jainpiyushandco@gmail.com
+        </Link>
+        <Link href="tel:+919999972659" className="flex items-center gap-2 hover:text-white transition-colors cursor-pointer">
+          <FaPhoneAlt size={14} /> +91-9999972659
+        </Link>
+        <div className="flex items-center gap-4 ml-2 pl-6 border-l border-gray-700">
+          <Link href="https://wa.me/919999972659" target="_blank" rel="noopener noreferrer" className="hover:text-[#25D366] transition-colors" title="WhatsApp">
+            <FaWhatsapp size={15} />
+          </Link>
+          <Link href="https://www.linkedin.com/in/piyush-jain-27260489/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0A66C2] transition-colors" title="LinkedIn">
+            <FaLinkedin size={15} />
+          </Link>
         </div>
-        <div className="flex items-center gap-2">
-          <Phone size={14} /> +91-9999972659
-        </div>
-        {/* <div className="flex items-center gap-3">
-          <span>Follow Us:</span>
-          <a href="#" className="hover:text-white transition-colors text-[#25D366]">
-            <MessageCircle size={14} />
-          </a>
-        </div> */}
       </div>
 
       {/* Main Navigation */}
@@ -39,7 +42,7 @@ export default function Header(): React.JSX.Element {
           className="lg:hidden text-[#0f1b29] p-2"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
 
         {/* Desktop Navigation Links */}
@@ -49,9 +52,9 @@ export default function Header(): React.JSX.Element {
           <a href="/careers" className="hover:text-orange-500 transition-colors">Careers</a>
           <a href="/updates" className="hover:text-orange-500 transition-colors">Stay Updated</a>
           <a href="/contact" className="hover:text-orange-500 transition-colors">Contact Us</a>
-          <button className="bg-[#0f1b29] text-white px-6 py-2.5 rounded-md hover:bg-orange-500 transition-all ml-2 font-medium">
+          <Link href="/contact" className="bg-[#0f1b29] text-white px-6 py-2.5 rounded-md hover:bg-orange-500 transition-all ml-2 font-medium">
             Let's Talk
-          </button>
+          </Link>
         </div>
       </nav>
 
@@ -59,15 +62,14 @@ export default function Header(): React.JSX.Element {
       {isMobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md border-t border-gray-100 flex flex-col py-4 px-6 z-40">
           <div className="flex flex-col gap-4 text-sm font-semibold text-[#0f1b29]">
-            <a href="/#about" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>About Us</a>
-            <a href="/leaders" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Leaders</a>
+            <a href="/about" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>About Us</a>
             <a href="/#services" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
             <a href="/careers" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Careers</a>
             <a href="/updates" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Stay Updated</a>
-            <a href="/#contact" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</a>
-            <button className="bg-[#0f1b29] text-white px-6 py-2.5 rounded-md hover:bg-orange-500 transition-all font-medium mt-2 w-fit">
+            <a href="/contact" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</a>
+            <Link href="/contact" className="bg-[#0f1b29] text-white px-6 py-2.5 rounded-md hover:bg-orange-500 transition-all font-medium mt-2 w-fit">
               Let's Talk
-            </button>
+            </Link>
           </div>
         </div>
       )}
