@@ -2,7 +2,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 
-export default function ContactUs(): React.JSX.Element {
+export default function page(): React.JSX.Element {
   return (
     <section className="bg-[#fafbfc] py-24 font-sans" id="contact">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12">

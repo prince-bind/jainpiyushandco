@@ -4,24 +4,64 @@ import React from 'react';
 // Updated services based on new verticals
 const servicesData = [
   {
-    title: "Taxation & Indirect Tax Litigation",
-    desc: "End-to-end GST management, complex litigation representation, cross-border direct tax planning, UAE VAT compliance, and structured GST refund recovery to free up blocked working capital.",
-    img: "/services/taxation.png"
+    title: "GST Advisory & Litigation",
+    desc: "Comprehensive GST solutions including registrations, return compliances, audits, assessments, advisory, and litigation support.",
+    img: "/services/1.png"
   },
   {
-    title: "Credit Risk & Financial Appraisals",
-    desc: "Advanced financial modeling, ratio evaluation, deep-dive due diligence, cash flow mapping, and institutional credit underwriting.",
-    img: "/services/management.png"
+    title: "Credit Underwriting",
+    desc: "Comprehensive credit appraisal, risk assessment, financial statement analysis, financial modelling, ratio analysis, and forecasting.",
+    img: "/services/2.png"
   },
   {
-    title: "Audit, Assurance & Process Design",
-    desc: "Statutory and tax audits tailored to boost stakeholder trust, paired with internal financial control evaluations (ICFR) and robust Standard Operating Procedure (SOP) design.",
-    img: "/services/audit.png"
+    title: "DGFT & Foreign Trade",
+    desc: "Advisory on Advance Authorization, EPCG, DFIA, Export Incentive Schemes, and other foreign trade compliances.",
+    img: "/services/3.png"
   },
   {
-    title: "Corporate Secretarial & Trade Frameworks",
-    desc: "Hassle-free company formations in India and Dubai, foreign trade incentives (DGFT, EPCG, Advance Authorization), RBI/FEMA regulatory filings, and dedicated Investor Education and Protection Fund (IEPF) asset recoveries.",
-    img: "/services/legal.png"
+    title: "GST Refunds",
+    desc: "End-to-end assistance in obtaining GST refunds relating to exports, inverted duty structures, and accumulated input tax credits.",
+    img: "/services/4.png"
+  },
+  {
+    title: "IEPF Advisory",
+    desc: "Assistance in recovery of unclaimed shares, dividends, and other investments from the IEPF Authority.",
+    img: "/services/5.png"
+  },
+  {
+    title: "Internal Audit & ICFR",
+    desc: "Designing and evaluating internal controls, ICFR frameworks, SOPs, and risk management processes for operational efficiency.",
+    img: "/services/6.png"
+  },
+  {
+    title: "Audit & Assurance",
+    desc: "Statutory audits, tax audits, internal audits, and limited reviews aimed at improving transparency and stakeholder confidence.",
+    img: "/services/7.png"
+  },
+  {
+    title: "Income Tax Advisory",
+    desc: "Tax planning, return filing, assessments, appeals, TDS compliance, and advisory on domestic and international taxation matters.",
+    img: "/services/8.png"
+  },
+  {
+    title: "Company Incorporation",
+    desc: "Company and LLP incorporation, ROC compliances, annual filings, corporate restructuring, and governance documentation.",
+    img: "/services/9.avif"
+  },
+  {
+    title: "Dubai Setup & UAE VAT",
+    desc: "Business setup assistance across Mainland, Free Zone, and Offshore jurisdictions, along with UAE VAT registration & compliance.",
+    img: "/services/10.png"
+  },
+  {
+    title: "Corporate Compliance",
+    desc: "Advisory on Companies Act, FEMA, RBI regulations, startup compliances, business restructuring, and regulatory risk management.",
+    img: "/services/11.png"
+  },
+  {
+    title: "CFO & Business Advisory",
+    desc: "Virtual CFO services including MIS reporting, budgeting, financial planning, fundraising support, and strategic financial management.",
+    img: "/services/12.png"
   }
 ];
 
@@ -39,12 +79,12 @@ export default function ServicesSection(): React.JSX.Element {
             Our Multi-Dimensional Services
           </h2>
           <p className="text-gray-500 text-lg">
-            We act as a single-window advisory ecosystem for modern enterprises, focusing on four high-impact verticals:
+            We act as a single-window advisory ecosystem for modern enterprises, providing a comprehensive suite of professional services:
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 max-w-7xl mx-auto">
           {servicesData.map((service, index) => (
             <div 
               key={index} 

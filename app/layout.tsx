@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jain Piyush & Co.",
+  title: "Jain Piyush & Co. - CA Firm",
   description: "Jain Piyush & Co. is a premier, multi-disciplinary Chartered Accountancy firm. We bridge the gap between complex legal frameworks and practical corporate strategy. Built on a foundation of technical excellence and a business-first philosophy, we redefine how organizations navigate compliance—turning regulatory obligations into drivers of sustainable corporate growth.",
 };
 

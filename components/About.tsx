@@ -165,7 +165,7 @@ export default function About(): React.JSX.Element {
             <div className="flex flex-wrap gap-4 mt-10">
               <div className="flex items-center gap-3 bg-[#f8fafc] border border-gray-100 px-6 py-3 rounded-xl shadow-sm">
                 <Award size={20} className="text-[#d8a379]" />
-                <span className="font-bold text-[#0f1b29] text-sm">10+ Years Expertise</span>
+                <span className="font-bold text-[#0f1b29] text-sm">12+ Years Expertise</span>
               </div>
               <div className="flex items-center gap-3 bg-[#f8fafc] border border-gray-100 px-6 py-3 rounded-xl shadow-sm">
                 <ShieldCheck size={20} className="text-[#d8a379]" />
