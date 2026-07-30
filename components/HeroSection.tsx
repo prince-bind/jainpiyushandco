@@ -86,7 +86,7 @@ export default function HeroSection(): React.JSX.Element {
 
         {/* Left Column - Content */}
         <div className="w-full lg:w-[55%] p-8 lg:p-16 xl:p-24 flex flex-col justify-center z-10">
-          <h1 className="text-5xl md:text-[3.5rem] lg:text-[4.5rem] font-extrabold text-[#d8a379] mb-8 leading-[1.1] tracking-tight">
+          <h1 className="text-4xl lg:text-6xl font-extrabold text-[#d8a379] mb-8 leading-[1.1] tracking-tight">
             Jain Piyush & Co.
           </h1>
           
@@ -120,11 +120,20 @@ export default function HeroSection(): React.JSX.Element {
               {/* Main Image Container */}
               <div className="relative w-full h-full bg-slate-800 rounded-tl-[100px] rounded-br-[100px] rounded-tr-3xl rounded-bl-3xl overflow-hidden shadow-2xl z-10">
                 <img
-                  src="/hero-image.avif"
-                  alt="Professional wearing a suit"
+                  src="/ca_firm_hero_3d.png"
+                  alt="Chartered Accountant workspace with financial documents and a modern calculator"
                   className="w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-blue-900/10 mix-blend-multiply"></div>
+                <div className="absolute inset-0 bg-[#0b131e]/20 mix-blend-multiply"></div>
+                
+                {/* Floating Firm Name Badge */}
+                <div className="absolute bottom-6 lg:bottom-10 right-6 lg:right-10 bg-[#0b131e]/85 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/10 shadow-2xl transform hover:-translate-y-1 transition-transform duration-300">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-[#d8a379] animate-pulse"></div>
+                    <p className="text-[#d8a379] font-extrabold tracking-wider text-sm uppercase">Jain Piyush & Co.</p>
+                  </div>
+                  <p className="text-white/80 text-xs font-medium mt-1 ml-5">Chartered Accountants</p>
+                </div>
               </div>
 
             </div>
@@ -143,12 +152,12 @@ export default function HeroSection(): React.JSX.Element {
 
           <div className="bg-[#1f2d3d]/50 rounded-[24px] p-8 flex flex-col items-center justify-center text-center shadow-lg hover:bg-[#253548]/70 transition-colors duration-300">
             <AnimatedCounter end={15} duration={1500} suffix="+" suffixColor="text-[#d8a379] ml-1" />
-            <p className="text-white text-xs md:text-sm font-bold tracking-[0.15em] mt-3 uppercase">Countries Served</p>
+            <p className="text-white text-xs md:text-sm font-bold tracking-[0.15em] mt-3 uppercase">States Served</p>
           </div>
 
           <div className="bg-[#1f2d3d]/50 rounded-[24px] p-8 flex flex-col items-center justify-center text-center shadow-lg hover:bg-[#253548]/70 transition-colors duration-300">
             <AnimatedCounter end={200} duration={2500} suffix="+" suffixColor="text-[#d8a379] ml-1" />
-            <p className="text-white text-xs md:text-sm font-bold tracking-[0.15em] mt-3 uppercase leading-relaxed">Foreign Companies<br />Setup</p>
+            <p className="text-white text-xs md:text-sm font-bold tracking-[0.15em] mt-3 uppercase leading-relaxed">Companies Setup</p>
           </div>
 
           <div className="bg-[#1f2d3d]/50 rounded-[24px] p-8 flex flex-col items-center justify-center text-center shadow-lg hover:bg-[#253548]/70 transition-colors duration-300">

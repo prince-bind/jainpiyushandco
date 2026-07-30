@@ -69,40 +69,29 @@ export default function About(): React.JSX.Element {
           </div>
 
           {/* Card 3: Our Mission */}
-          <div className="relative bg-[#0f1b29] rounded-3xl p-8 lg:p-10 shadow-lg overflow-hidden border border-[#1a2636] hover:scale-105 hover:shadow-md transition-all duration-300">
-            {/* Top-right accent shape */}
-            <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#172538] rounded-full blur-2xl z-0 pointer-events-none"></div>
-            <div className="absolute top-0 right-0 w-20 h-20 bg-[#1c2e43] rounded-bl-[80px] z-0 pointer-events-none"></div>
-            
-            <div className="relative z-10">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-[#1c2e43] p-2.5 rounded-xl text-[#d8a379] border border-[#2d3d4e]">
-                  <Target size={24} strokeWidth={2} />
-                </div>
+          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="bg-orange-100/50 p-2.5 rounded-xl text-[#d8a379]">
+                <Target size={24} strokeWidth={2} />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
-              <p className="text-[#94a3b8] text-[0.95rem] leading-relaxed">
-                To empower businesses with accurate, timely, and strategic financial solutions that enable growth, compliance, and long-term success.
-              </p>
+              <h3 className="text-2xl font-bold text-[#0f1b29]">Our Mission</h3>
             </div>
+            <p className="text-gray-600 text-[0.95rem] leading-relaxed">
+              To empower businesses with accurate, timely, and strategic financial solutions that enable growth, compliance, and long-term success.
+            </p>
           </div>
 
           {/* Card 4: Our Vision */}
-          <div className="relative bg-[#deb896] rounded-3xl p-8 lg:p-10 shadow-lg overflow-hidden border border-[#d2a884] hover:scale-105 hover:shadow-md transition-all duration-300">
-             {/* Top-right accent shape */}
-             <div className="absolute top-0 right-0 w-24 h-24 bg-[#e8c6a8] rounded-bl-[80px] z-0 pointer-events-none"></div>
-            
-            <div className="relative z-10">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-[#e8c6a8] p-2.5 rounded-xl text-[#0f1b29] border border-[#d2a884]/30">
-                  <Eye size={24} strokeWidth={2} />
-                </div>
+          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="bg-orange-100/50 p-2.5 rounded-xl text-[#d8a379]">
+                <Eye size={24} strokeWidth={2} />
               </div>
-              <h3 className="text-2xl font-bold text-[#0f1b29] mb-4">Our Vision</h3>
-              <p className="text-[#0f1b29]/80 text-[0.95rem] leading-relaxed font-medium">
-                To be recognized as a trusted partner for entrepreneurs and global businesses in India, delivering excellence in every engagement.
-              </p>
+              <h3 className="text-2xl font-bold text-[#0f1b29]">Our Vision</h3>
             </div>
+            <p className="text-gray-600 text-[0.95rem] leading-relaxed">
+              To be recognized as a trusted partner for entrepreneurs and global businesses in India, delivering excellence in every engagement.
+            </p>
           </div>
 
         </div>

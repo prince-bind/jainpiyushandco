@@ -4,8 +4,8 @@ import { Shield, Lightbulb, Scale, TrendingUp } from 'lucide-react';
 
 export default function AboutPage(): React.JSX.Element {
   return (
-    <div className="bg-[#fafbfc] min-h-screen font-sans text-[#0f1b29] pb-24">
-      
+    <div className="bg-[#fafbfc] min-h-screen font-sans text-[#0f1b29]">
+
       {/* Hero Section */}
       <section className="relative pt-24 pb-20 px-6 lg:px-12 overflow-hidden">
         {/* Background elements */}
@@ -28,39 +28,8 @@ export default function AboutPage(): React.JSX.Element {
         </div>
       </section>
 
-      {/* Core Value & Philosophy Grid */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-          
-          {/* Core Value */}
-          <div className="bg-white rounded-[2rem] p-10 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-bl-full opacity-50"></div>
-            <div className="w-14 h-14 bg-[#fdf3ec] rounded-2xl flex items-center justify-center text-[#e8af81] mb-8">
-              <Shield size={28} strokeWidth={2} />
-            </div>
-            <h2 className="text-2xl font-bold text-[#0f1b29] mb-4">The Core Value We Deliver</h2>
-            <p className="text-[#596778] leading-relaxed">
-              We don't merely point out systemic gaps or hand you standard compliance reports. We actively partner with your leadership team to protect profit margins, mitigate balance-sheet risks, and map out compliant paths toward your long-term expansion goals.
-            </p>
-          </div>
-
-          {/* Philosophy */}
-          <div className="bg-[#0f1c2b] rounded-[2rem] p-10 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
-             <div className="absolute bottom-0 right-0 w-32 h-32 bg-[#1d2a3a] rounded-tl-full opacity-50"></div>
-            <div className="w-14 h-14 bg-[#1d2a3a] rounded-2xl flex items-center justify-center text-[#e8af81] mb-8 relative z-10">
-              <Lightbulb size={28} strokeWidth={2} />
-            </div>
-            <h2 className="text-2xl font-bold text-white mb-4 relative z-10">Our Philosophy</h2>
-            <p className="text-[#94a3b8] leading-relaxed relative z-10">
-              We believe every business deserves practical advice, transparent communication, and proactive compliance support. Our approach combines technical excellence with commercial understanding to deliver solutions that are legally sound, commercially viable, and growth-oriented.
-            </p>
-          </div>
-
-        </div>
-      </section>
-
       {/* Leadership Section */}
-      <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-10">
+      <section className="max-w-7xl mx-auto px-6 lg:px-12 mb-24">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <span className="text-[#e8af81] text-sm font-bold tracking-widest uppercase block mb-3">
             OUR LEADERSHIP
@@ -74,12 +43,12 @@ export default function AboutPage(): React.JSX.Element {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-          
+
           {/* Piyush Jain Profile */}
           <div className="bg-white rounded-[2rem] p-8 lg:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col group hover:-translate-y-1 transition-all duration-300 hover:shadow-xl">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-8 border-b border-gray-100 pb-8">
-              <div className="w-24 h-24 bg-[#fdf3ec] rounded-full flex items-center justify-center text-[#e8af81] shrink-0 border border-[#f5d7be]">
-                <Scale size={40} strokeWidth={1.5} />
+              <div className="w-24 h-24 rounded-full overflow-hidden shrink-0 border border-[#f5d7be] shadow-sm bg-gray-50">
+                <img src="/CA-Piyush-Jain.png" alt="CA Piyush Jain" className="w-full h-full object-cover object-top" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-[#0f1b29] mb-2 group-hover:text-[#e8af81] transition-colors">CA Piyush Jain</h3>
@@ -89,7 +58,7 @@ export default function AboutPage(): React.JSX.Element {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-4 text-[#596778] text-[0.95rem] leading-relaxed flex-grow">
               <p>
                 <strong className="text-[#0f1b29] font-semibold">Backed by over 12 years of specialized expertise</strong>, Piyush operates at the precise intersection of tax law and commercial strategy. He acts as a trusted Pan-India advisor to multinational corporations, helping cross-border and domestic entities structure seamless operations.
@@ -106,8 +75,8 @@ export default function AboutPage(): React.JSX.Element {
           {/* Megha Jain Profile */}
           <div className="bg-white rounded-[2rem] p-8 lg:p-10 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 flex flex-col group hover:-translate-y-1 transition-all duration-300 hover:shadow-xl">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-8 border-b border-gray-100 pb-8">
-              <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 shrink-0 border border-blue-100">
-                <TrendingUp size={40} strokeWidth={1.5} />
+              <div className="w-24 h-24 rounded-full overflow-hidden shrink-0 border border-blue-100 shadow-sm bg-gray-50">
+                <img src="/CA-Megha-Jain.jpeg" alt="CA Megha Jain" className="w-full h-full object-cover object-top" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-[#0f1b29] mb-2 group-hover:text-blue-500 transition-colors">CA Megha Jain</h3>
@@ -117,7 +86,7 @@ export default function AboutPage(): React.JSX.Element {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-4 text-[#596778] text-[0.95rem] leading-relaxed flex-grow">
               <p>
                 <strong className="text-[#0f1b29] font-semibold">Bringing 11 years of extensive experience</strong> in financial analysis and corporate auditing, Megha leads our credit underwriting and risk advisory workflows. Her deep-dive financial appraisals provide the data-driven insights businesses and financial institutions need to make sound capital allocations.
@@ -131,6 +100,51 @@ export default function AboutPage(): React.JSX.Element {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* Core Value & Philosophy Grid */}
+      <section className="bg-white border-t border-gray-100 py-24 mt-12 relative overflow-hidden">
+        {/* Background accent */}
+        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-50/50 via-white to-white pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+          <div className="text-center mb-16 max-w-3xl mx-auto">
+            <span className="text-[#e8af81] text-sm font-bold tracking-widest uppercase block mb-3">
+              OUR FOUNDATION
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0f1b29] mb-6 tracking-tight">
+              Value & Philosophy
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+
+            {/* Core Value */}
+            <div className="bg-white rounded-[2rem] p-10 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-bl-full opacity-50"></div>
+              <div className="w-14 h-14 bg-[#fdf3ec] rounded-2xl flex items-center justify-center text-[#e8af81] mb-8">
+                <Shield size={28} strokeWidth={2} />
+              </div>
+              <h2 className="text-2xl font-bold text-[#0f1b29] mb-4">The Core Value We Deliver</h2>
+              <p className="text-[#596778] leading-relaxed">
+                We don't merely point out systemic gaps or hand you standard compliance reports. We actively partner with your leadership team to protect profit margins, mitigate balance-sheet risks, and map out compliant paths toward your long-term expansion goals.
+              </p>
+            </div>
+
+            {/* Philosophy */}
+            <div className="bg-white rounded-[2rem] p-10 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-gray-100 hover:shadow-xl transition-shadow duration-300 relative overflow-hidden">
+              <div className="absolute bottom-0 right-0 w-32 h-32 bg-orange-50 rounded-tl-full opacity-50"></div>
+              <div className="w-14 h-14 bg-[#fdf3ec] rounded-2xl flex items-center justify-center text-[#e8af81] mb-8 relative z-10">
+                <Lightbulb size={28} strokeWidth={2} />
+              </div>
+              <h2 className="text-2xl font-bold text-[#0f1b29] mb-4 relative z-10">Our Philosophy</h2>
+              <p className="text-[#596778] leading-relaxed relative z-10">
+                We believe every business deserves practical advice, transparent communication, and proactive compliance support. Our approach combines technical excellence with commercial understanding to deliver solutions that are legally sound, commercially viable, and growth-oriented.
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
 
