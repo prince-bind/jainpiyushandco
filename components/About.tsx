@@ -12,10 +12,10 @@ export default function About(): React.JSX.Element {
           Jain Piyush & Co. - Chartered Accountants
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 auto-rows-fr">
           
           {/* Card 1: Our Story */}
-          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300">
+          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300 h-full">
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-orange-100/50 p-2.5 rounded-xl text-[#d8a379]">
                 <BookOpen size={24} strokeWidth={2} />
@@ -33,7 +33,7 @@ export default function About(): React.JSX.Element {
           </div>
 
           {/* Card 2: Who We Are */}
-          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300">
+          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300 h-full">
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-orange-100/50 p-2.5 rounded-xl text-[#d8a379]">
                 <User size={24} strokeWidth={2} />
@@ -69,7 +69,7 @@ export default function About(): React.JSX.Element {
           </div>
 
           {/* Card 3: Our Mission */}
-          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300">
+          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300 h-full">
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-orange-100/50 p-2.5 rounded-xl text-[#d8a379]">
                 <Target size={24} strokeWidth={2} />
@@ -82,7 +82,7 @@ export default function About(): React.JSX.Element {
           </div>
 
           {/* Card 4: Our Vision */}
-          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300">
+          <div className="bg-[#f8fafc] rounded-3xl p-8 lg:p-10 shadow-sm border border-gray-100 hover:scale-105 hover:shadow-md transition-all duration-300 h-full">
             <div className="flex items-center gap-4 mb-6">
               <div className="bg-orange-100/50 p-2.5 rounded-xl text-[#d8a379]">
                 <Eye size={24} strokeWidth={2} />
