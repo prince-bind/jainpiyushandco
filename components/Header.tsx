@@ -51,6 +51,7 @@ export default function Header(): React.JSX.Element {
           <a href="/#services" className="hover:text-orange-500 transition-colors">Services</a>
           <a href="/careers" className="hover:text-orange-500 transition-colors">Careers</a>
           <a href="/updates" className="hover:text-orange-500 transition-colors">Stay Updated</a>
+          <a href="/blog" className="hover:text-orange-500 transition-colors">Blog</a>
           <a href="/contact" className="hover:text-orange-500 transition-colors">Contact Us</a>
           <Link href="/contact" className="bg-[#0f1b29] text-white px-6 py-2.5 rounded-md hover:bg-orange-500 transition-all ml-2 font-medium">
             Let's Talk
@@ -66,6 +67,7 @@ export default function Header(): React.JSX.Element {
             <a href="/#services" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Services</a>
             <a href="/careers" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Careers</a>
             <a href="/updates" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Stay Updated</a>
+            <a href="/blog" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Blog</a>
             <a href="/contact" className="hover:text-orange-500 transition-colors" onClick={() => setIsMobileMenuOpen(false)}>Contact Us</a>
             <Link href="/contact" className="bg-[#0f1b29] text-white px-6 py-2.5 rounded-md hover:bg-orange-500 transition-all font-medium mt-2 w-fit">
               Let's Talk

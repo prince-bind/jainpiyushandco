@@ -92,10 +92,10 @@ export default function AboutPage(): React.JSX.Element {
                 <strong className="text-[#0f1b29] font-semibold">Bringing 11 years of extensive experience</strong> in financial analysis and corporate auditing, Megha leads our credit underwriting and risk advisory workflows. Her deep-dive financial appraisals provide the data-driven insights businesses and financial institutions need to make sound capital allocations.
               </p>
               <p>
-                She specializes in evaluating financial health, assessing creditworthiness, identifying business risks, and delivering actionable financial insights that support lending, investment, and strategic decision-making.
+                She specializes in evaluating financial health, assessing creditworthiness, identifying business risks, and delivering actionable financial insights that support lending, investment, and strategic decision-making. Her audit expertise spans Internal Audit, Statutory Audit, ICFR Testing, Fixed Asset Verification, and Stock Audit, along with specialized experience in Bank Statutory Audit and Bank Concurrent Audit assignments.
               </p>
               <p>
-                At the firm, she leads financial due diligence, credit appraisal, financial modelling, and risk evaluation assignments. Her analytical approach enables clients to strengthen financial controls, improve performance, and achieve sustainable growth.
+                At the firm, she leads financial due diligence, credit appraisal, financial modelling, and risk evaluation assignments, complemented by her audit and internal controls background. Her analytical approach enables clients to strengthen financial controls, improve performance, and achieve sustainable growth.
               </p>
             </div>
           </div>
@@ -104,17 +104,17 @@ export default function AboutPage(): React.JSX.Element {
       </section>
 
       {/* Core Value & Philosophy Grid */}
-      <section className="bg-white border-t border-gray-100 py-24 mt-12 relative overflow-hidden">
+      <section className="bg-white border-t border-gray-100 py-10 relative overflow-hidden">
         {/* Background accent */}
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-orange-50/50 via-white to-white pointer-events-none"></div>
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
           <div className="text-center mb-16 max-w-3xl mx-auto">
-            <span className="text-[#e8af81] text-sm font-bold tracking-widest uppercase block mb-3">
+            <span className="text-[#e8af81] text-xl font-bold tracking-widest uppercase block mb-3">
               OUR FOUNDATION
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0f1b29] mb-6 tracking-tight">
-              Value & Philosophy
+              We Serve You Trust
             </h2>
           </div>
 

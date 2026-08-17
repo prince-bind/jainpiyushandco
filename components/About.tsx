@@ -120,7 +120,7 @@ export default function About(): React.JSX.Element {
               {/* Floating Quote Card */}
               <div className="absolute -bottom-6 -right-6 lg:bottom-8 lg:-right-12 bg-[#0f1b29] text-white p-6 md:p-8 rounded-2xl shadow-2xl w-[90%] md:w-[80%] z-20 border border-gray-800">
                 <p className="text-lg md:text-xl font-bold mb-4 leading-snug">
-                  "Knowledge and integrity can build something lasting."
+                  "Consistency can even beat Talent and Luck."
                 </p>
                 <p className="text-[#d8a379] font-semibold text-sm">
                   - CA Piyush Jain
